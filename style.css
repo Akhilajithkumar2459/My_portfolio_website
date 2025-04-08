@@ -341,6 +341,9 @@ nav.fas{
     display: none;
 
 }
+nav i {
+    display: none;
+}
 @media only screen and (max-width:600px){
     #header{
         background-size: 100%;
