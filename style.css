@@ -91,6 +91,7 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     flex-basis: 60%;
+    word-spacing: 0.5em;
 }
 .about-col-2 h1{
     font-size: 60px;
