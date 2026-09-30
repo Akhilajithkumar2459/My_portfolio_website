@@ -1,223 +1,846 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+
+    <meta name="description"
+          content="Akhil A Kumar - M.Tech Artificial Intelligence and Machine Learning student, AI Engineer and Machine Learning enthusiast.">
+
+    <meta name="author" content="Akhil A Kumar">
+
+    <title>Akhil A Kumar | AI & ML Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6a03974416.js" crossorigin="anonymous"></script>
+
+    <script
+        src="https://kit.fontawesome.com/6a03974416.js"
+        crossorigin="anonymous">
+    </script>
 </head>
+
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="logo.png" class="logo" width="300px" height="100px">
 
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>M.Tech Student</p>
-                <h1>Hi,I'm  <span>Akhil A Kumar</span></h1>
+<!-- ================= HEADER ================= -->
+
+<header id="header">
+
+    <div class="container">
+
+        <nav>
+
+            <a href="#header" aria-label="Akhil A Kumar Home">
+                <img
+                    src="logo.png"
+                    class="logo"
+                    width="300"
+                    height="100"
+                    alt="Akhil A Kumar logo">
+            </a>
+
+            <ul id="sidemenu">
+
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+                <li>
+                    <button
+                        class="menu-close"
+                        type="button"
+                        onclick="closemenu()"
+                        aria-label="Close navigation menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li>
+
+            </ul>
+
+            <button
+                class="menu-open"
+                type="button"
+                onclick="openmenu()"
+                aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+
+        <div class="header-text">
+
+            <p>AI & Machine Learning | M.Tech Student</p>
+
+            <h1>
+                Hi, I'm
+                <span>Akhil A Kumar</span>
+            </h1>
+
+            <p class="hero-description">
+                I build intelligent systems using Machine Learning,
+                Deep Learning, Computer Vision and AI.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#portfolio" class="btn">
+                    View Projects
+                </a>
+
+                <a href="cv.pdf" download class="btn btn2">
+                    Download CV
+                </a>
 
             </div>
-            <div class="header-text">
-                
+
         </div>
 
-
     </div>
-    <!--about-->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="pp.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p class="about-desc">I’m Akhil A Kumar, an M.Tech student in Artificial Intelligence and Machine Learning at Amrita Vishwa Vidyapeetham with a strong foundation in Python, machine learning, deep learning, and full-stack web development. I’m deeply interested in building intelligent systems that solve real-world problems and improve accessibility and healthcare.
 
-My technical toolkit includes CNNs, LSTMs, Transformers, and the MERN stack, along with experience in tools like MediaPipe and OpenAI APIs. I enjoy exploring how AI can be applied across domains, especially through computer vision and NLP.
+</header>
 
-Currently seeking internship or full-time opportunities where I can contribute, learn, and grow in the fields of machine learning, AI engineering, or software development.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    </div>
-                    <div class="tab-contents" id="skills">
-                        <ul>
-                            <li><span>Artificial Intelligence</span><br>Python,Machine Learning,Deep Learning</li>
-                            <li><span>Web Development</span><br>HTML,CSS,JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2024-present M.Tech</span><br>Artificial Intelligence,Amrita vishwavidyapeetham,Amritapuri</li>
-                            <li><span>2018-2022 B.Tech</span><br>Electronics & Instrumentation,College of Engineering,Chengannur</li>
-                            <li><span>2017-2018 High School</span><br>Chinmaya Vidyalaya,Chengannur</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                         <ul>
-                            <li><span>Research Intern</span><br>HutLabs</li>
-                            
-                        </ul>
-                        <ul>
-                            <li><span>2023 Data Science Intern</span><br>AI variant,Bengaluru</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="tab-contents">
-                    
+
+<!-- ================= ABOUT ================= -->
+
+<main>
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="about-col-1">
+
+                <img
+                    src="pp.jpg"
+                    alt="Portrait of Akhil A Kumar"
+                    loading="lazy">
+
             </div>
-        </div>
-    </div>
-    <!--services-->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-robot"></i>
-                    <h2>Machine Learning & AI</h2>
-                    <p>I specialize in developing ML and deep learning models for classification, regression, and clustering. My expertise includes CNN, RNN, LSTM, and computer vision using TensorFlow, PyTorch, and MediaPipe. I also work on NLP applications, ASL recognition using CNN + LSTM, and fusion models for medical AI. Additionally, I provide data science solutions such as data analysis, visualization, and predictive modeling.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>I develop full-stack applications using the MERN stack (MongoDB, Express, React, Node.js) and build backend APIs with Express.js and Flask. I also integrate AI models into web platforms for real-world deployment and create interactive dashboards for data visualization.</p>
-                    <a href="#">Learn more</a>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!--portfolio-->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="work-1.png">
-                    <div class="layer">
-                        <h3>Handsign to text</h3>
-                        <p>A machine learning model that converts American Sign Language (ASL) gestures into text using a CNN + LSTM model.</p>
-                        <a href="https://github.com/Akhilajithkumar2459/Tredence-Hackathon"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="work-2.jpg">
-                    <div class="layer">
-                        <h3>Movie Recommendation System</h3>
-                        <p>A machine learning model that recommends movies based on user preferences using collaborative filtering.used html,css,javascript,python,flask for frontend and backend.</p>
-                        <a href="https://github.com/Akhilajithkumar2459/Web_Development_project-Movie-Recommendation"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="https://miro.medium.com/v2/resize:fit:580/1*q8raSpcw_tLT0C3fx7dmWw.png">
-                    <div class="layer">
-                        <h3>Breast Cancer Predcition</h3>
-                        <p>A Machine learning model that predicts whether a patient is having cancer or not</p>
-                        <a href="https://github.com/Akhilajithkumar2459/Breast_Cancer_prediction"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See more</a>
-            
-        </div>
-    </div>
-    <!--contact-->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> akhilajithkumar91@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +919446087507</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/akhil.ajithkumar.777/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/_akhilajithkumar/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/akhil-a-kumar-357042258/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Akhilajithkumar2459"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://leetcode.com/u/Akhilajithkumar2459/"><i class="fa-solid fa-code"></i></a>
-                    </div>
-                    <a href="cv.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-            
-        </div>
-        <div class="copyright">
-            <p>Copyright © Akhil. Made with <i class="fa-solid fa-heart"></i> by Akhil</p>
-        </div>
-    </div>
-    <script>
-        var tablinks=document.getElementsByClassName("tab-links");
-        var tabcontents=document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
+
+            <div class="about-col-2">
+
+                <h2 class="sub-title">
+                    About Me
+                </h2>
+
+                <p class="about-desc">
+                    I'm Akhil A Kumar, an M.Tech student in Artificial
+                    Intelligence and Machine Learning at Amrita Vishwa
+                    Vidyapeetham. I have a strong foundation in Python,
+                    Machine Learning, Deep Learning, Computer Vision,
+                    Natural Language Processing and Full-Stack Web
+                    Development.
+                </p>
+
+                <p class="about-desc">
+                    I enjoy building intelligent systems that solve
+                    real-world problems, with particular interest in
+                    Computer Vision, NLP and AI-powered applications.
+                    My technical experience includes CNNs, LSTMs,
+                    Transformers, MediaPipe, TensorFlow, PyTorch and
+                    modern web technologies.
+                </p>
+
+                <p class="about-desc">
+                    I'm interested in opportunities where I can apply
+                    my technical skills, contribute to meaningful
+                    projects and continue growing as an AI/ML Engineer.
+                </p>
+
+
+                <!-- Tabs -->
+
+                <div class="tab-titles">
+
+                    <button
+                        class="tab-links active-link"
+                        type="button"
+                        onclick="openTab(event, 'skills')">
+                        Skills
+                    </button>
+
+                    <button
+                        class="tab-links"
+                        type="button"
+                        onclick="openTab(event, 'education')">
+                        Education
+                    </button>
+
+                    <button
+                        class="tab-links"
+                        type="button"
+                        onclick="openTab(event, 'experience')">
+                        Experience
+                    </button>
+
+                </div>
+
+
+                <!-- Skills -->
+
+                <div class="tab-contents active-tab" id="skills">
+
+                    <ul>
+
+                        <li>
+                            <span>Artificial Intelligence</span>
+                            <br>
+                            Python, Machine Learning, Deep Learning,
+                            Computer Vision, NLP
+                        </li>
+
+                        <li>
+                            <span>Deep Learning</span>
+                            <br>
+                            CNN, RNN, LSTM, Transformers,
+                            TensorFlow, PyTorch
+                        </li>
+
+                        <li>
+                            <span>Web Development</span>
+                            <br>
+                            HTML, CSS, JavaScript, React, Node.js,
+                            Express.js, Flask
+                        </li>
+
+                        <li>
+                            <span>Tools & Technologies</span>
+                            <br>
+                            MediaPipe, OpenAI APIs, Streamlit,
+                            Git, GitHub
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Education -->
+
+                <div class="tab-contents" id="education">
+
+                    <ul>
+
+                        <li>
+                            <span>2024 – Present | M.Tech</span>
+                            <br>
+                            Artificial Intelligence & Machine Learning
+                            <br>
+                            Amrita Vishwa Vidyapeetham, Amritapuri
+                        </li>
+
+                        <li>
+                            <span>2018 – 2022 | B.Tech</span>
+                            <br>
+                            Electronics & Instrumentation Engineering
+                            <br>
+                            College of Engineering Chengannur
+                        </li>
+
+                        <li>
+                            <span>2017 – 2018 | Higher Secondary</span>
+                            <br>
+                            Chinmaya Vidyalaya, Chengannur
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Experience -->
+
+                <div class="tab-contents" id="experience">
+
+                    <ul>
+
+                        <li>
+                            <span>Research Intern</span>
+                            <br>
+                            HutLabs
+                        </li>
+
+                        <li>
+                            <span>2023 | Data Science Intern</span>
+                            <br>
+                            AI Variant, Bengaluru
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+    <div class="container">
+
+        <h2 class="sub-title">
+            My Services
+        </h2>
+
+
+        <div class="services-list">
+
+            <article>
+
+                <i class="fa-solid fa-robot"></i>
+
+                <h3>
+                    Machine Learning & AI
+                </h3>
+
+                <p>
+                    I develop machine learning and deep learning
+                    solutions for classification, regression,
+                    clustering and computer vision applications.
+                    My experience includes CNNs, RNNs, LSTMs,
+                    Transformers, TensorFlow, PyTorch and MediaPipe.
+                </p>
+
+                <a href="#contact">
+                    Discuss a Project
+                </a>
+
+            </article>
+
+
+            <article>
+
+                <i class="fa-solid fa-code"></i>
+
+                <h3>
+                    Web Development
+                </h3>
+
+                <p>
+                    I build responsive full-stack web applications
+                    using technologies such as HTML, CSS, JavaScript,
+                    React, Node.js, Express.js and Flask. I can also
+                    integrate machine learning models into web
+                    applications.
+                </p>
+
+                <a href="#contact">
+                    Discuss a Project
+                </a>
+
+            </article>
+
+
+            <article>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <h3>
+                    Data Science
+                </h3>
+
+                <p>
+                    I work with data preprocessing, exploratory data
+                    analysis, visualization, predictive modelling
+                    and machine learning to extract useful insights
+                    from data.
+                </p>
+
+                <a href="#contact">
+                    Discuss a Project
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section id="portfolio">
+
+    <div class="container">
+
+        <h2 class="sub-title">
+            My Projects
+        </h2>
+
+
+        <div class="work-list">
+
+
+            <!-- Project 1 -->
+
+            <article class="work">
+
+                <img
+                    src="work-1.png"
+                    alt="Handsign to Text project"
+                    loading="lazy">
+
+                <div class="layer">
+
+                    <h3>
+                        Handsign to Text
+                    </h3>
+
+                    <p>
+                        A machine learning project that converts
+                        American Sign Language gestures into text.
+                    </p>
+
+                    <p class="project-tech">
+                        Python · Machine Learning · CNN · LSTM
+                    </p>
+
+                    <a
+                        href="https://github.com/Akhilajithkumar2459/Tredence-Hackathon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Handsign to Text project on GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 2 -->
+
+            <article class="work">
+
+                <img
+                    src="work-2.jpg"
+                    alt="Movie Recommendation System"
+                    loading="lazy">
+
+                <div class="layer">
+
+                    <h3>
+                        Movie Recommendation System
+                    </h3>
+
+                    <p>
+                        A movie recommendation application that
+                        provides recommendations based on user
+                        preferences.
+                    </p>
+
+                    <p class="project-tech">
+                        Python · Flask · HTML · CSS · JavaScript
+                    </p>
+
+                    <a
+                        href="https://github.com/Akhilajithkumar2459/Web_Development_project-Movie-Recommendation"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Movie Recommendation project on GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 3 -->
+
+            <article class="work">
+
+                <img
+                    src="https://miro.medium.com/v2/resize:fit:580/1*q8raSpcw_tLT0C3fx7dmWw.png"
+                    alt="Breast Cancer Prediction project"
+                    loading="lazy">
+
+                <div class="layer">
+
+                    <h3>
+                        Breast Cancer Prediction
+                    </h3>
+
+                    <p>
+                        A machine learning application designed to
+                        classify breast cancer cases using medical
+                        dataset features.
+                    </p>
+
+                    <p class="project-tech">
+                        Python · Machine Learning · Streamlit
+                    </p>
+
+                    <a
+                        href="https://github.com/Akhilajithkumar2459/Breast_Cancer_prediction"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="View Breast Cancer Prediction project on GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <a href="https://github.com/Akhilajithkumar2459"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">
+
+            See More Projects
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="contact-left">
+
+                <h2 class="sub-title">
+                    Contact Me
+                </h2>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:akhilajithkumar91@gmail.com">
+                        akhilajithkumar91@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919446087507">
+                        +91 94460 87507
+                    </a>
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a
+                        href="https://www.facebook.com/akhil.ajithkumar.777/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+
+                    <a
+                        href="https://www.instagram.com/_akhilajithkumar/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/akhil-a-kumar-357042258/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </a>
+
+                    <a
+                        href="https://github.com/Akhilajithkumar2459"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+                    <a
+                        href="https://leetcode.com/u/Akhilajithkumar2459/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LeetCode">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </a>
+
+                </div>
+
+
+                <a
+                    href="cv.pdf"
+                    download
+                    class="btn btn2">
+
+                    Download CV
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-right">
+
+                <form
+                    id="contact-form"
+                    name="submit-to-google-sheet">
+
+                    <input
+                        type="text"
+                        name="Name"
+                        placeholder="Your Name"
+                        autocomplete="name"
+                        required>
+
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Your Email"
+                        autocomplete="email"
+                        required>
+
+                    <textarea
+                        name="Message"
+                        rows="6"
+                        placeholder="Your Message"
+                        required></textarea>
+
+                    <button
+                        type="submit"
+                        class="btn btn2"
+                        id="submit-button">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+                <span
+                    id="msg"
+                    role="status"
+                    aria-live="polite">
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="copyright">
+
+        <p>
+            Copyright © Akhil.
+            Made with
+            <i class="fa-solid fa-heart"></i>
+            by Akhil.
+        </p>
+
+    </footer>
+
+</section>
+
+</main>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    /* ================= TABS ================= */
+
+    function openTab(event, tabName) {
+
+        const tabLinks =
+            document.querySelectorAll(".tab-links");
+
+        const tabContents =
+            document.querySelectorAll(".tab-contents");
+
+
+        tabLinks.forEach(link => {
+            link.classList.remove("active-link");
+        });
+
+
+        tabContents.forEach(content => {
+            content.classList.remove("active-tab");
+        });
+
+
+        event.currentTarget.classList.add("active-link");
+
+        document
+            .getElementById(tabName)
+            .classList.add("active-tab");
+    }
+
+
+
+    /* ================= MOBILE MENU ================= */
+
+    const sideMenu =
+        document.getElementById("sidemenu");
+
+
+    function openmenu() {
+
+        sideMenu.style.right = "0";
+
+    }
+
+
+    function closemenu() {
+
+        sideMenu.style.right = "-200px";
+
+    }
+
+
+    /* Close menu when a navigation link is clicked */
+
+    document
+        .querySelectorAll("#sidemenu a")
+        .forEach(link => {
+
+            link.addEventListener("click", closemenu);
+
+        });
+
+
+
+    /* ================= CONTACT FORM ================= */
+
+    const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyOLkdRn_Avs80_uLL3zhHcRovY_Qwgm2UyFRHHK2vtix0Xyk_ZfJTxTWLl7LDpy4qH2A/exec";
+
+
+    const form =
+        document.forms["submit-to-google-sheet"];
+
+
+    const message =
+        document.getElementById("msg");
+
+
+    const submitButton =
+        document.getElementById("submit-button");
+
+
+    form.addEventListener("submit", async function (event) {
+
+        event.preventDefault();
+
+
+        submitButton.disabled = true;
+
+        submitButton.innerText = "Sending...";
+
+
+        try {
+
+            const response = await fetch(
+                scriptURL,
+                {
+                    method: "POST",
+                    body: new FormData(form)
+                }
+            );
+
+
+            if (!response.ok) {
+                throw new Error("Failed to send message.");
             }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
 
-            
+
+            message.innerText =
+                "Message sent successfully!";
+
+            form.reset();
+
+
+            setTimeout(() => {
+
+                message.innerText = "";
+
+            }, 3000);
+
+
+        } catch (error) {
+
+            console.error("Form submission error:", error);
+
+            message.innerText =
+                "Unable to send message. Please try again.";
+
+        } finally {
+
+            submitButton.disabled = false;
+
+            submitButton.innerText =
+                "Send Message";
+
         }
-    </script>
-    <script>
-        var sidemenu=document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right="0";
-        }
-        function closemenu(){
-            sidemenu.style.right="-200px";
-        }
-    </script>
-    
-      
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyOLkdRn_Avs80_uLL3zhHcRovY_Qwgm2UyFRHHK2vtix0Xyk_ZfJTxTWLl7LDpy4qH2A/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg=document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },1000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+
+    });
+
+</script>
 
 </body>
 </html>
-
+```
